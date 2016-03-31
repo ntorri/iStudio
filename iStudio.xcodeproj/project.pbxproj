@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		DE2774651CADA8080051C283 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2774641CADA8080051C283 /* AppDelegate.swift */; };
-		DE2774671CADA8080051C283 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2774661CADA8080051C283 /* ViewController.swift */; };
 		DE2774691CADA8080051C283 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE2774681CADA8080051C283 /* Assets.xcassets */; };
-		DE27746C1CADA8080051C283 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE27746A1CADA8080051C283 /* Main.storyboard */; };
 		DE2774771CADA8080051C283 /* iStudioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2774761CADA8080051C283 /* iStudioTests.swift */; };
+		DE2774821CADA8480051C283 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE2774811CADA8480051C283 /* Main.storyboard */; };
+		DE2774841CADA8910051C283 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2774831CADA8910051C283 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,13 +27,13 @@
 /* Begin PBXFileReference section */
 		DE2774611CADA8080051C283 /* iStudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iStudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE2774641CADA8080051C283 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DE2774661CADA8080051C283 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DE2774681CADA8080051C283 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DE27746B1CADA8080051C283 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE27746D1CADA8080051C283 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE2774721CADA8080051C283 /* iStudioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iStudioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE2774761CADA8080051C283 /* iStudioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iStudioTests.swift; sourceTree = "<group>"; };
 		DE2774781CADA8080051C283 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE2774811CADA8480051C283 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		DE2774831CADA8910051C283 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,10 +75,10 @@
 		DE2774631CADA8080051C283 /* iStudio */ = {
 			isa = PBXGroup;
 			children = (
+				DE2774831CADA8910051C283 /* ViewController.swift */,
+				DE2774811CADA8480051C283 /* Main.storyboard */,
 				DE2774641CADA8080051C283 /* AppDelegate.swift */,
-				DE2774661CADA8080051C283 /* ViewController.swift */,
 				DE2774681CADA8080051C283 /* Assets.xcassets */,
-				DE27746A1CADA8080051C283 /* Main.storyboard */,
 				DE27746D1CADA8080051C283 /* Info.plist */,
 			);
 			path = iStudio;
@@ -175,7 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE2774691CADA8080051C283 /* Assets.xcassets in Resources */,
-				DE27746C1CADA8080051C283 /* Main.storyboard in Resources */,
+				DE2774821CADA8480051C283 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,7 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE2774671CADA8080051C283 /* ViewController.swift in Sources */,
+				DE2774841CADA8910051C283 /* ViewController.swift in Sources */,
 				DE2774651CADA8080051C283 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,17 +215,6 @@
 			targetProxy = DE2774731CADA8080051C283 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		DE27746A1CADA8080051C283 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DE27746B1CADA8080051C283 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DE2774791CADA8080051C283 /* Debug */ = {
