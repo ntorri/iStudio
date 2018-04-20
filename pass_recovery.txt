@@ -1,0 +1,50 @@
+00:00:03: %OIR-6-CONSOLE: Changing console ownership to route processor
+
+!--- The RP now has control of the console. !--- This is when you send the break sequence.
+
+confreg 0x2142
+reset
+enable
+copy start run
+show run
+
+!--- Check aaa and tacacs commands
+
+!--- Overwrite the password.
+
+configure terminal
+enable secret Blue777Sky!!
+
+show ip interface brief
+int range g0/1 - 48
+no shutdown 
+exit
+
+int range t0/1 - 24
+no shutdown 
+exit
+
+line vty 0 4
+password Blue777Sky!!
+^Z
+
+show version
+
+16384K bytes of Flash internal SIMM (Sector size 256K).
+Configuration register is 0x2142
+
+conf t
+config-register 0x2102
+^Z
+
+show version
+
+!---
+16384K bytes of Flash internal SIMM (Sector size 256K).
+Configuration register is 0x2142 (will be 0x2102 at next reload)
+!---
+copy run start
+
+
+!--- Optional: If you want to test that the router !--- 
+reload
